@@ -13,7 +13,9 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './home/core/navbar/navbar.component';
-
+//firebase
+import { AngularFireModule } from 'angularfire2';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { NavbarComponent } from './home/core/navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
 
 
   ],
