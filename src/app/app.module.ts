@@ -7,7 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //routing
 import {AppRoutingModule} from './routing/app-routing'
-
+//bootstrap
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 //components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -23,6 +24,7 @@ import { NavbarComponent } from './home/core/navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CarouselModule.forRoot()
 
 
   ],
