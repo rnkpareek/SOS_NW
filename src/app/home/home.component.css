@@ -1,0 +1,10 @@
+.slider-ctrl {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.slider-ctrl slide img {
+  max-height: 280px;
+  width: 100%;
+  display: block;
+}
