@@ -29,14 +29,7 @@ constructor(
 
 getJewellList() {
 
-console.log("here on get jewell list----------")
-
-
-
-
-
-
-   this.jewell= this._angularFirestore.collection('JEWELLERYS')
+this.jewell= this._angularFirestore.collection('JEWELLERYS')
                 .doc('Womens')
                 .collection('ring').snapshotChanges().map(changes =>{
       return changes.map( a=>{

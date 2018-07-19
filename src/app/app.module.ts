@@ -21,7 +21,12 @@ import {AngularFirestore} from 'angularfire2/firestore';
 import {AngularFireDatabase} from 'angularfire2/database';
 //services
 import{subcatService} from './home/sub-cat/subcat.services'
-import {jewellService} from './home/fireservices/jewell.service'
+import {jewellService} from './home/fireservices/jewell.service';
+//extra
+//ngxbootsrap
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
+//marerial
 
 @NgModule({
   declarations: [
@@ -31,13 +36,17 @@ import {jewellService} from './home/fireservices/jewell.service'
     SubCatComponent,
 
 
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    BsDropdownModule.forRoot()
 
 
 

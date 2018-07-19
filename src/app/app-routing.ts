@@ -5,8 +5,9 @@ import{SubCatComponent} from './home/sub-cat/sub-cat.component'
 export const routes: Routes = [
 
    {path: '' , component: HomeComponent} ,
-   {path: 'test' , component: SubCatComponent},
-   {path:'ring',loadChildren:"app/home/jewell/jewell.module#JewellModule"},
+   {path: 'rings' , component: SubCatComponent},
+   /*{path:'ring1',loadChildren:"app/home/jewell/jewell.module#JewellModule"},*/
+   {path:'Jewell',loadChildren:"app/home/jewell1/jewell1.module#Jewell1Module"},
 
    {
     path: '',

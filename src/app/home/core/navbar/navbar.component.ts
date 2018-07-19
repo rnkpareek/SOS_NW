@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   constructor() { }
-
+ selected  = true;
   ngOnInit() {
   }
 
+
+
+hello(val){
+  console.log(val)
+}
 }

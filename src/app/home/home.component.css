@@ -8,3 +8,6 @@
   width: 100%;
   display: block;
 }
+.dropdown-menu {
+  min-width: 260px;
+}

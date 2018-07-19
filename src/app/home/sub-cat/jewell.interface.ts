@@ -19,6 +19,7 @@ prod_image_url?:string;
 prod_offer_price?:string;
 prod_retail_price?:string;
 prod_sub_category?:string;
+prod_sub_sub_category?:string;
 prod_title?:string;
 product_details_url?:string;
 

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JewellhomeComponent } from './jewellhome.component';
+import { Jewell1Component } from './jewell1.component';
 
-describe('JewellhomeComponent', () => {
-  let component: JewellhomeComponent;
-  let fixture: ComponentFixture<JewellhomeComponent>;
+describe('Jewell1Component', () => {
+  let component: Jewell1Component;
+  let fixture: ComponentFixture<Jewell1Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ JewellhomeComponent ]
+      declarations: [ Jewell1Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(JewellhomeComponent);
+    fixture = TestBed.createComponent(Jewell1Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
