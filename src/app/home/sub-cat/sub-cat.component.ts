@@ -13,14 +13,14 @@ export class SubCatComponent implements OnInit {
 
 
   ngOnInit() {
-  /* this.subcatservice.getjewlldata();
+  this.subcatservice.getjewlldata();
 
     this.subcatservice.getjewlldata().subscribe(notes =>{
 
     this.data=notes;
     console.log("==========",this.data.length)
     console.log("-------------",this.data[0]["menu_id"])
-   })*/
+   })
 
   }
 

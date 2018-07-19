@@ -3,12 +3,13 @@
 <div class="container">
   <div class="row" >
     <div class="col-xs-6 col-sm-3" *ngFor="let x of data">
-      <div class="card" style="border: 1px solid #ccc; text-align: center; margin-bottom: 15px;">
+      <div class="card" style="border: 1px solid #ccc; text-align: center; margin-bottom: 15px;" *ngIf="(x.prod_image_url.length>0)&&(x.prod_offer_price.length>0)">
         <img class="card-img-top" src="{{x.prod_image_url}}" alt="Card image" style="width:100%">
         <div class="card-body">
-          <h4 class="card-title">{{x.prod_sub_category}}</h4>
-          <p class="card-text">{{x.prod_offer_price}}</p>
-        </div>
+
+          <h4 class="card-title"><a href={{x.product_detail_url}}>{{x.prod_title.length>0?x.prod_title:"Rings"}}</a></h4>
+          <p class="card-text"> {{x.prod_offer_price.includes("Rs")?x.prod_offer_price:"Rs".concat(" "+x.prod_offer_price)}}</p>
+          </div>
       </div>
     </div>
   </div>
